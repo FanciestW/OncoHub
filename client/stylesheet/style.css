@@ -17,13 +17,6 @@ Layout Style
 /*
 Nav Style
 */
-.navLeft{
-	margin-left: -80%;
-	margin-bottom: -10%;
-}
-
-.bannerDiv{
-}
 
 .topnav{
 	background-color: white;
@@ -33,7 +26,7 @@ Nav Style
 }
 
 .accounts-dialog{
-	margin-left: 1px;
+	margin-left: -300%;
 	margin-top: 0px;
 }
 
