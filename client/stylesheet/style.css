@@ -18,11 +18,11 @@ Layout Style
 Nav Style
 */
 .navLeft{
-	display: inline-block;
+	margin-left: -80%;
+	margin-bottom: -10%;
 }
 
 .bannerDiv{
-	display: inline-block;
 }
 
 .topnav{
@@ -37,18 +37,30 @@ Nav Style
 	margin-top: 0px;
 }
 
+.navbar{
+	text-align: center;
+}
+
+.linkText{
+	color: #e6e6e6;
+}
+
+.linkBox{
+	background-color: #e0502f;
+	border-radius: 15px;
+	text-align: center;
+	margin: 1%;
+	display: inline-block;
+	padding: 5px;
+}
+
+.linkBox:hover{
+	background-color: #e56b53;
+}
+
 /*
 HomePage Style
 */
 .homepage{
 	text-align: center;
-}
-
-.linkBox{
-	background-color: #e6e6e6;
-	padding: 20px;
-	border-radius: 15px;
-	text-align: center;
-	margin: 20px;
-	display: inline-block;
 }
