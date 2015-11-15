@@ -33,9 +33,12 @@ Nav Style
 /*
 HomePage Style
 */
+.homepage{
+	text-align: center;
+}
 
 .linkBox{
-	background-color: red;
+	background-color: #0e5467;
 	padding: 20px;
 	border-radius: 15px;
 	text-align: center;
