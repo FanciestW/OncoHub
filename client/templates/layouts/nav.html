@@ -1,5 +1,9 @@
 <template name = "nav">
-	{{ >loginButtons }}
-	<a href="/myhome"><img src="/images/homeIcon.png" width="5%" height="5%"/></a>
-	<img src = "/images/OncoHubLogo.png" align = "center">
+	<div class = "navLeft">
+		{{ >loginButtons }}
+		<a href="/myhome"><img src="/images/homeIcon.png" width="5%" height="5%"/></a>
+	</div>
+	<div class="bannerDiv">
+		<img class = "banner" src = "/images/OncoHubLogo.png">
+	</div>
 </template>

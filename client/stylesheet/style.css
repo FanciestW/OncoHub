@@ -17,12 +17,19 @@ Layout Style
 /*
 Nav Style
 */
+.navLeft{
+	display: inline-block;
+}
+
+.bannerDiv{
+	display: inline-block;
+}
 
 .topnav{
 	background-color: white;
 	padding: 5px;
 	margin-top: none;
-	text-align: left;
+	text-align: center;
 }
 
 .accounts-dialog{
