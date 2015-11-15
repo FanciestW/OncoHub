@@ -1,3 +1,11 @@
 <template name = "calendar">
-	{{ >fullcalendar defaultView = 'month' }}
+	{{ >fullcalendar options }}
+	<form onsubmit="addEvent()">
+		Event Name:<input type="text" name="eventName">
+		Start Date:<input type="date" name="startDate">
+		Start Time:<input type="local-time" name="startTime">
+		End Date:<input type="date" name="endDate">
+		End Time:<input type="local-time" name="endTime">
+		<input type="submit" value="Add Event">
+	</form>
 </template>
