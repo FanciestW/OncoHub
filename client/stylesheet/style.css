@@ -5,11 +5,11 @@ Layout Style
 .outerWall{
 	padding: 50px 0;
 	position: relative;
-	background-color: pink;	
+	background-color: #e6e6e6;	
 }
 
 .content{
-	background-color: cyan;
+	background-color: white;
 	padding: 30px 15px;
 	border-radius: 10px;
 }
@@ -19,7 +19,7 @@ Nav Style
 */
 
 .topnav{
-	background-color: cyan;
+	background-color: white;
 	padding: 5px;
 	margin-top: none;
 	text-align: left;
@@ -38,7 +38,7 @@ HomePage Style
 }
 
 .linkBox{
-	background-color: #0e5467;
+	background-color: #e6e6e6;
 	padding: 20px;
 	border-radius: 15px;
 	text-align: center;
