@@ -1,3 +1,11 @@
-<template name="layout">
-	{{> yield}}
+<template name = "layout">
+	<div class = "topnav">
+		{{ >nav }}
+	</div>
+	
+	<section class="outerWall">
+		<div class = "content">
+			{{ > yield }}
+		</div>
+	</section>
 </template>

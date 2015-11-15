@@ -1,0 +1,44 @@
+/*
+Layout Style
+*/
+
+.outerWall{
+	padding: 50px 0;
+	position: relative;
+	background-color: pink;	
+}
+
+.content{
+	background-color: cyan;
+	padding: 30px 15px;
+	border-radius: 10px;
+}
+
+/*
+Nav Style
+*/
+
+.topnav{
+	background-color: cyan;
+	padding: 5px;
+	margin-top: none;
+	text-align: left;
+}
+
+.accounts-dialog{
+	margin-left: 1px;
+	margin-top: 0px;
+}
+
+/*
+HomePage Style
+*/
+
+.linkBox{
+	background-color: red;
+	padding: 20px;
+	border-radius: 15px;
+	text-align: center;
+	margin: 20px;
+	display: inline-block;
+}
