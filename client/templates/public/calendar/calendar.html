@@ -1,5 +1,4 @@
 <template name = "calendar">
-	{{ >fullcalendar options }}
 	<form onsubmit="addEvent()">
 		Event Name:<input type="text" name="eventName">
 		Start Date:<input type="date" name="startDate">
@@ -8,4 +7,6 @@
 		End Time:<input type="local-time" name="endTime">
 		<input type="submit" value="Add Event">
 	</form>
+	{{ >fullcalendar options }}
+	
 </template>
