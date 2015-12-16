@@ -7,6 +7,7 @@
 		End Time:<input type="local-time" name="endTime">
 		<input type="submit" value="Add Event">
 	</form>
-	{{ >fullcalendar options }}
+	<button type="button" id="weekView">Week</button>
+	{{ >fullcalendar options id="myCalendar"}}
 	
 </template>

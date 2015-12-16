@@ -10,5 +10,8 @@ if(Meteor.isClient){
 		}
 	});
 
-
+	$("#weekView").click(function(){
+		console.log("Tested");
+		$("#myCalendar").fullCalendar('changeView', basicWeek);
+	});
 }
