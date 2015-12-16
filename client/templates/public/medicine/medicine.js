@@ -1,4 +1,3 @@
-Meds = new Mongo.Collection("meds");
 
 if(Meteor.isClient){
 	Template.medicine.helpers({
@@ -17,6 +16,8 @@ if(Meteor.isClient){
 				text: text,
 				createdAt: new Date()
 			});
+
+			event.target.text.value="";
 		}
 	});
 }
