@@ -1,17 +1,18 @@
-<template name = "navBar">
+<template name="navBar">
 	<nav class="navbar navbar-inverse">
 	  	<div class="container-fluid">
 	    	<div>
 	      		<ul class="nav navbar-nav">
-			        <li class="active"><a href="/myhome">My Home</a></li>
-			        <li><a href="/calendar">My Calendar</a></li>
-			        <li><a href="/medicine">My Medications</a></li> 
-			        <li><a href="/treatment">My Treatments</a></li> 
+			        <li><a href="/myhome"><i class="fa fa-home fa-2x"></i> My Home</a></li>
+			        <li><a href="/calendar"><i class="fa fa-calendar fa-2x"></i> My Calendar</a></li>
+			        <li><a href="/medicine"><i class="fa fa-medkit fa-2x"></i> My Medications</a></li> 
+			        <li><a href="/treatment"><i class="fa fa-user-md fa-2x"></i> My Treatments</a></li> 
 		      	</ul>
 		      	<ul class="nav navbar-nav navbar-right">
-       				<li class="active"><a href="#">{{>loginButtons}}</a></li>
+       				<li><a href="#"><i class="fa fa-sign-in fa-2x"></i> {{>loginButtons}}</a></li>
       			</ul>
 		    </div>
 	  	</div>
 	</nav>
 </template>
+
