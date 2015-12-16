@@ -1,11 +1,24 @@
 <template name = "medicine">
 	<div class = "medPage">
-		<button><h1>Current medications</h1></button>
-		<button><h1>Past medications</h1></button>
-
+		<div class = "center-block">
+			<form class = "addMed">
+				<label>Medicine Name: </label>
+				<input type = "text" name = "text" placeholder = "Type new Medication Name">
+				<button type = "submit">Add</button>
+			</form>
+			<h1>Medications</h1>
+		</div>
 		<div class = "medList">
-
+			<ul>
+				{{#each meds}}
+					{{ >medlist}}
+				{{/each}}
+			</ul>
 		</div>	
 	</div>		
 
+</template>
+
+<template name = "medlist">
+	<li>{{text}}</li>
 </template>
