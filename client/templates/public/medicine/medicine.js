@@ -3,22 +3,22 @@ if(Meteor.isClient){
 
 	Template.medicine.helpers({
 		meds: function(){
-			return Meds.find({});
+			return Meds.find({}, {sort: {createdAt: -1}});
 		}
 	});
 
 	Template.medicine.events({
 		"submit .addMed": function(event){
 			event.preventDefault();
+			if($("#medName") != ""){
+				var text = event.target.text.value;
 
-			var text = event.target.text.value;
+				Meds.insert({
+					text: text
+				});
 
-			Meds.insert({
-				text: text,
-				createdAt: new Date()
-			});
-
-			event.target.text.value="";
+				event.target.text.value="";
+			}
 		}
 	});
 }
