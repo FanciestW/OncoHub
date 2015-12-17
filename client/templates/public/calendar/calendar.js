@@ -1,21 +1,42 @@
 if(Meteor.isClient){
-
+	
 	Template.calendar.helpers({
+		options: function(){
+			return{
+				header: {
+					left: 'title',
+					center : '',
+					right: 'today, agendaDay, agendaWeek, month, prev, next'
+				},
 
+				dayClick: function(date, jsEvent, view){
+					if(view.name != 'month')
+						return;
+					this.fullCalendar('changeView', 'agendaDay').fullCalendar('gotoDate', date);
+				},
+
+				events: function(){
+					return Events.find({});
+				}
+
+			}
+		}
 	});
 
 	Template.calendar.events({
-		"click #weekView": function(event){
-			$("#myCalendar").fullCalendar('changeView', 'agendaWeek');
-		},
+		"submit .newEvent": function(event){
+			event.preventDefault();
 
-		"click #dayView": function(event){
-			$("#myCalendar").fullCalendar('changeView', 'agendaDay');
-		},
+			var name = event.target.eventName.value;
+			var startDate = event.target.startDate.value;
+			var endDate = event.target.endDate.value;
 
-		"click #monthView": function(event){
-			$("#myCalendar").fullCalendar('changeView', 'month');
+			Events.insert({
+				title: name,
+				start: startDate,
+				end: endDate
+			})
 		}
 	});
-		
+
 }
