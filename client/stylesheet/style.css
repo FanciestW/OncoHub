@@ -8,6 +8,9 @@ Welcome Page Style
 /*
 Layout Style
 */
+body{
+	background-color: #33ccff;
+}
 
 .outerWall{
 	padding: 50px 0;
@@ -16,9 +19,11 @@ Layout Style
 }
 
 .content{
-	background-color: white;
+	background-color: #b3ecff;
 	padding: 30px 15px;
-	border-radius: 10px;
+	position: absolute;
+	height: auto;
+	width: 100%;
 }
 
 /*
@@ -26,7 +31,7 @@ Nav Style
 */
 
 .topnav{
-	background-color: white;
+	background-color: #33ccff;
 	padding: 5px;
 	margin-top: none;
 	text-align: center;
@@ -39,6 +44,9 @@ Nav Style
 
 .navbar{
 	text-align: center;
+	margin: 0px;
+	border: 0px;
+	border-radius: 0px;
 }
 
 .linkText{

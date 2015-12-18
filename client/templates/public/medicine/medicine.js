@@ -17,7 +17,7 @@ if(Meteor.isClient){
 					text: text
 				});
 
-				event.target.text.value="";
+				event.target.text.value = "";
 			}
 		}
 	});

@@ -1,7 +1,3 @@
-UserList = new Mongo.Collection("userList");
+Meds = new Mongo.Collection("Meds");
 
-DoctorList = new Mongo.Collection("docList");
-
-Meds = new Mongo.Collection("meds");
-
-Events = new Mongo.Collection("events");
+Events = new Mongo.Collection("Events");

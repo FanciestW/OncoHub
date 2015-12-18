@@ -31,11 +31,17 @@ if(Meteor.isClient){
 			var startDate = event.target.startDate.value;
 			var endDate = event.target.endDate.value;
 
+			console.log("Inserted:" + name + " from " + startDate + " to " + endDate);
+
 			Events.insert({
 				title: name,
 				start: startDate,
 				end: endDate
-			})
+			});
+
+			event.target.eventName.value = "";
+			event.target.startDate.value = "";
+			event.target.endDate.value = "";
 		}
 	});
 
