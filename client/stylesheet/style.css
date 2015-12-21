@@ -3,6 +3,9 @@ Welcome Page Style
 */
 .welcomeMsg{
 	text-align: center;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /*
@@ -10,6 +13,7 @@ Layout Style
 */
 body{
 	background-color: #33ccff;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .outerWall{
@@ -71,4 +75,8 @@ HomePage Style
 */
 .homepage{
 	text-align: center;
+}
+
+.homeBtn{
+	color: red;
 }
