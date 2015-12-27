@@ -79,4 +79,15 @@ HomePage Style
 
 .homeBtn{
 	color: red;
+	display: inline-block;
+	padding: 2%;
+	margin: 2%;
+	background-color: #00ffff;
+	border-radius: 20px;
+	text-decoration: none;
+}
+
+.homeBtn:hover{
+	background-color: #00e5e6;
+	text-decoration: none;
 }
