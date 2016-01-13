@@ -1,11 +1,7 @@
 <template name = "medicine">
 	<div class = "medPage">
 		<div class = "center-block">
-			<form class = "addMed">
-				<label id="medName">Medicine Name: </label>
-				<input type = "text" name = "text" placeholder = "Type new Medication Name">
-				<button type = "submit">Add</button>
-			</form>
+			{{> quickForm collection="Meds" id="medsForm" type="insert"}}
 			<h1>Medications</h1>
 		</div>
 		<div class = "medList">
@@ -20,5 +16,5 @@
 </template>
 
 <template name = "medlist">
-	<li>{{text}}</li>
+	<li>{{name}}</li>
 </template>
