@@ -1,4 +1,3 @@
-
 if(Meteor.isClient){
 
 	Template.medicine.helpers({
@@ -8,17 +7,16 @@ if(Meteor.isClient){
 	});
 
 	Template.medicine.events({
-		"submit .addMed": function(event){
+		"submit": function(event){
+			console.log("Hello");
 			event.preventDefault();
-			if($("#medName") != ""){
-				var text = event.target.text.value;
+			var text = event.target.medName.value;
 
-				Meds.insert({
-					text: text
-				});
+			Meds.insert({
+				text: text
+			});
 
-				event.target.text.value = "";
-			}
+			event.target.text.value = "";
 		}
 	});
 }
