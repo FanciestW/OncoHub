@@ -1,18 +1,18 @@
 Meds = new Mongo.Collection("Meds");
 
-MedsSchema = new SimpleSchema({
+Meds.attachSchema(new SimpleSchema({
 
-	"medName": {
+	medName: {
 		type: String,
 		label: "Name of Medicine",
-		optional: false
+		optional: false,
+		max: 250
 	},
 
-	"medDose": {
+	medDose: {
 		type: Number,
 		label: "Medication dosage in mg",
-		optional: false
+		optional: false,
+		min: 0
 	}
-});
-
-Meds.attachSchema(MedsSchema);
+}));
