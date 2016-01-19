@@ -13,6 +13,14 @@ Meds.attachSchema(new SimpleSchema({
 		type: Number,
 		label: "Medication dosage in mg",
 		optional: false,
-		min: 0
+		min: 0,
+		max: 999
+	},
+
+	medDesc: {
+		type: String,
+		label: "Description of Medicine",
+		optional: true,
+		max: 1000
 	}
 }));

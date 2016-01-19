@@ -1,12 +1,16 @@
-<template name = "medicine">
+<template name="medicine">
 	<div class="row">
 		<div class = "col-md-4">
-			{{> quickForm collection="Meds" id="medsForm" type="insert"}}
-			<h1>Medications</h1>
+			{{>medForm}}
 		</div>
+<<<<<<< HEAD
 	</div>
 	<div class="row">
 		<div class = "col-md-4 medList">
+=======
+		<p class="medTitle">Medications</p>
+		<div class = "col-md-8 medList">
+>>>>>>> dev
 			{{#each meds}}
 				{{ >medlist}}
 			{{/each}}
@@ -15,9 +19,42 @@
 
 </template>
 
+<<<<<<< HEAD
 <template name = "medlist">
 	<div class="eachMed">
 		<b>Name:</b> {{medName}}
 		<b>Dosage:</b> {{medDose}}mg
 	</div>
+=======
+<template name="medlist">
+	<div class="eachMed">
+		<div class="row">
+			<b>Name:</b> 
+			<div class="medName">
+				{{medName}}
+			</div>
+			<b>Dosage:</b> 
+			<div class="medDose">
+				{{medDose}}mg
+			</div>
+			<b>Description:</b>
+			<div class="medDesc">
+				{{medDesc}}
+			</div>
+		</div>
+		<hr>
+	</div>
+</template>
+
+<template name="medForm">
+	{{#autoForm collection="Meds" id="insertMedForm" type="insert"}}
+		<fieldset>
+			<legend><b>Add Medicine</b></legend>
+			{{>afQuickField name="medName"}}
+			{{>afQuickField name="medDose"}}
+			{{>afQuickField name="medDesc" rows=6}}
+		</fieldset>
+		<button type="submit" class="btn btn-primary">Add</button>									
+	{{/autoForm}}
+>>>>>>> dev
 </template>
