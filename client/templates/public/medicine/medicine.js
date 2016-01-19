@@ -8,7 +8,6 @@ if(Meteor.isClient){
 
 	Template.medicine.events({
 		"submit": function(event){
-			console.log("Hello");
 			event.preventDefault();
 			var text = event.target.medName.value;
 
