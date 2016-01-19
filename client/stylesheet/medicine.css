@@ -1,9 +1,30 @@
 .medList{
 	height: 300px;
-	width: 500px;
 	overflow: scroll;
 }
 
 .eachMed{
-	margin: 5px;
+	padding: none;
+}
+
+.medTitle{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.medName{
+	display: inline-block;
+	width: 200px;
+	word-wrap: break-word;
+}
+
+.medDose{
+	display: inline-block;
+	width: 50px;
+	word-wrap: break-word;
+}
+
+.medDesc{
+	display: inline-block;
+	word-wrap: break-word;
 }
