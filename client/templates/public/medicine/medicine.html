@@ -3,14 +3,11 @@
 		<div class = "col-md-4">
 			{{>medForm}}
 		</div>
-<<<<<<< HEAD
 	</div>
 	<div class="row">
 		<div class = "col-md-4 medList">
-=======
 		<p class="medTitle">Medications</p>
 		<div class = "col-md-8 medList">
->>>>>>> dev
 			{{#each meds}}
 				{{ >medlist}}
 			{{/each}}
@@ -18,14 +15,11 @@
 	</div>		
 
 </template>
-
-<<<<<<< HEAD
 <template name = "medlist">
 	<div class="eachMed">
 		<b>Name:</b> {{medName}}
 		<b>Dosage:</b> {{medDose}}mg
 	</div>
-=======
 <template name="medlist">
 	<div class="eachMed">
 		<div class="row">
@@ -56,5 +50,4 @@
 		</fieldset>
 		<button type="submit" class="btn btn-primary">Add</button>									
 	{{/autoForm}}
->>>>>>> dev
 </template>
