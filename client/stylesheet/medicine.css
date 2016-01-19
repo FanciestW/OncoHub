@@ -1,0 +1,9 @@
+.medList{
+	height: 300px;
+	width: 500px;
+	overflow: scroll;
+}
+
+.eachMed{
+	margin: 5px;
+}
