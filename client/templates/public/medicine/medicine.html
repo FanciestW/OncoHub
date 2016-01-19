@@ -6,17 +6,18 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class = "medList">
-			<ul>
-				{{#each meds}}
-					{{ >medlist}}
-				{{/each}}
-			</ul>
+		<div class = "col-md-4 medList">
+			{{#each meds}}
+				{{ >medlist}}
+			{{/each}}
 		</div>	
 	</div>		
 
 </template>
 
 <template name = "medlist">
-	<li>{{medName}} {{medDose}}mg</li>
+	<div class="eachMed">
+		<b>Name:</b> {{medName}}
+		<b>Dosage:</b> {{medDose}}mg
+	</div>
 </template>
