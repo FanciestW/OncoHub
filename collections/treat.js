@@ -1,6 +1,6 @@
 Treatments = new Mongo.Collection("treatments");
 
-Treaments.attachSchema(new SimpleSchema({
+Treatments.attachSchema(new SimpleSchema({
 
 	treatmentName: {
 		type: String,
