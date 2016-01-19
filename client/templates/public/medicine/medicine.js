@@ -2,7 +2,7 @@ if(Meteor.isClient){
 
 	Template.medicine.helpers({
 		meds: function(){
-			return Meds.find({}, {sort: {createdAt: -1}});
+			return Meds.find().fetch().reverse();
 		}
 	});
 
