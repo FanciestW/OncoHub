@@ -1,4 +1,51 @@
 <template name="treatment">
-	<h1 class="text-center">Page Coming Soon</h1>
+	<div class="row">
+		<div class = "col-md-4">
+			{{>treatForm}}
+		</div>
+		
+		<p class="treatTitle">Treatments</p>
+
+		<div class = "col-md-8 treatList">
+			{{#each treats}}
+				{{ >treatlist}}
+			{{/each}}
+		</div>	
+	</div>
 </template>
 
+<template name = "treatlist">
+	<div class="eachTreat">
+		<div class="row">
+
+			<h5><b>Name:</b></h5> 
+			<div class="treatName">
+				{{treatmentName}}
+			</div>
+
+			<b>Date:</b>
+			<div class="treatDate">
+				{{treatmentDate}}
+			</div>
+
+			<b>Description:</b>
+			<div class="treatDesc">
+				{{treatmentDesc}}
+			</div>
+		</div>
+		<hr>
+	</div>
+</template>
+
+<template name="treatForm">
+	{{#autoForm collection="Treatments" id="insertTreatmentForm" type="insert"}}
+		<fieldset>
+			<legend><b>Add A Treatment</b></legend>
+			{{>afQuickField name="treatmentName"}}
+			{{>afQuickField name="treatmentDate"}}
+			{{>afQuickField name="treatmentDesc" rows=6}}
+		</fieldset>
+		<button type="submit" class="btn btn-primary">Add</button>
+		<button type="reset" class="btn btn-cancel">Clear</button>									
+	{{/autoForm}}
+</template>
