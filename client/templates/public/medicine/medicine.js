@@ -26,4 +26,6 @@ if(Meteor.isClient){
 			event.target.text.value = "";
 		}
 	});
+	
+	Meteor.subscribe("Meds");
 }
