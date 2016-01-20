@@ -1,8 +1,17 @@
-Meteor.publish('Meds', function() {
-  if (this.userId) {
-  	console.log(this.userId);
+Meteor.publish('Meds', function(){
+  if(this.userId){
     return Meds.find({createdBy: this.userId});
-  } else {
+  }
+  else{
     this.ready();
   }
+});
+
+Meteor.publish('Treatments', function(){
+	if(this.userId){
+		return Treatments.find({createdBy: this.userId});
+	}
+	else{
+		this.ready();
+	}
 });
