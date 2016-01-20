@@ -30,3 +30,19 @@ Meds.attachSchema(new SimpleSchema({
 		max: 1000
 	}
 }));
+
+if (Meteor.isClient) {
+  	Meteor.subscribe("Meds");
+}
+
+if (Meteor.isServer) {
+	Meteor.publish("Meds", function () {
+	    return Books.find();
+	});
+
+	Meds.allow({
+		'insert': function(userId){
+			return true;
+		}
+	});
+}

@@ -3,6 +3,7 @@
 		<div class = "col-md-4">
 			{{>medForm}}
 		</div>
+		
 		<p class="medTitle">Medications</p>
 		<div class = "col-md-8 medList">
 			{{#each meds}}
@@ -10,10 +11,9 @@
 			{{/each}}
 		</div>	
 	</div>		
-
 </template>
 
-<template name="medlist">
+<template name = "medlist">
 	<div class="eachMed">
 		<div class="row">
 
@@ -29,7 +29,7 @@
 
 			<b>Date:</b>
 			<div class="medDate">
-				{{formatDate medDate}}
+				{{prettifyDate medDate}}
 			</div>
 
 			<b>Description:</b>
@@ -46,10 +46,11 @@
 		<fieldset>
 			<legend><b>Add Medicine</b></legend>
 			{{>afQuickField name="medName"}}
-			{{>afQuickField name="medDose"}}
+			{{>afQuickField name="medDose" type="text"}}
 			{{>afQuickField name="medDate"}}
 			{{>afQuickField name="medDesc" rows=6}}
 		</fieldset>
-		<button type="submit" class="btn btn-primary">Add</button>									
+		<button type="submit" class="btn btn-primary">Add</button>
+		<button type="reset" class="btn btn-cancel">Clear</button>									
 	{{/autoForm}}
 </template>

@@ -1,10 +1,11 @@
 .medList{
-	height: 300px;
 	overflow: scroll;
+	background-color: #fff;
+	border-radius: 5px;;
 }
 
 .eachMed{
-	padding: none;
+	padding: 10px;
 }
 
 .medTitle{
