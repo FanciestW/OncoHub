@@ -6,6 +6,10 @@ if(Meteor.isClient){
 		}
 	});
 
+	Template.medicine.helpers("formatDate", function(medDate){
+		return new Date(medDate).toString('yyyy-MM-dd');
+	});
+
 	Template.medicine.events({
 		"submit": function(event){
 			event.preventDefault();
