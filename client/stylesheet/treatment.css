@@ -1,0 +1,31 @@
+.treatList{
+	overflow: scroll;
+	background-color: #fff;
+	border-radius: 5px;;
+}
+
+.eachTreat{
+	padding: 10px;
+}
+
+.treatTitle{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.treatmentName{
+	display: inline-block;
+	width: 100px;
+	word-wrap: break-word;
+}
+
+.treatmentDate{
+	display: inline-block;
+	width: 100px;
+	word-wrap: break-word;
+}
+
+.treatmentDesc{
+	display: inline-block;
+	word-wrap: break-word;
+}
