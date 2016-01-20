@@ -6,8 +6,6 @@ if(Meteor.isClient){
 		}
 	});
 
-	Meteor.subscribe('meds');
-
 	//Does not prettify date
 	Template.registerHelper("prettifyDate", function(medDate){
 		return new Date(medDate).toString('yyyy-MM-dd')
