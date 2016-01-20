@@ -28,5 +28,11 @@ Meds.attachSchema(new SimpleSchema({
 		label: "Description of Medicine",
 		optional: true,
 		max: 1000
+	},
+
+	createdBy: {
+		type: String,
+		autoValue: function(){ return this.userId }
 	}
+
 }));

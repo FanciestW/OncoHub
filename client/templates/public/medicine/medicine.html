@@ -3,10 +3,9 @@
 		<div class = "col-md-4">
 			{{>medForm}}
 		</div>
-	</div>
-	<div class="row">
-		<div class = "col-md-4 medList">
+
 		<p class="medTitle">Medications</p>
+
 		<div class = "col-md-8 medList">
 			{{#each meds}}
 				{{ >medlist}}
@@ -20,7 +19,6 @@
 		<b>Name:</b> {{medName}}
 		<b>Dosage:</b> {{medDose}}mg
 	</div>
-<template name="medlist">
 	<div class="eachMed">
 		<div class="row">
 
