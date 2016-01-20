@@ -34,5 +34,20 @@ Meds.attachSchema(new SimpleSchema({
 		type: String,
 		autoValue: function(){ return this.userId }
 	}
-
 }));
+
+if (Meteor.isClient) {
+  	Meteor.subscribe("Meds");
+}
+
+if (Meteor.isServer) {
+	Meteor.publish("Meds", function () {
+	    return Books.find();
+	});
+
+	Meds.allow({
+		'insert': function(userId){
+			return true;
+		}
+	});
+}

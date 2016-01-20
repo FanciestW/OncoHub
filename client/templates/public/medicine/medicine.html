@@ -30,7 +30,7 @@
 
 			<b>Date:</b>
 			<div class="medDate">
-				{{medDate}}
+				{{prettifyDate medDate}}
 			</div>
 
 			<b>Description:</b>
@@ -47,10 +47,11 @@
 		<fieldset>
 			<legend><b>Add Medicine</b></legend>
 			{{>afQuickField name="medName"}}
-			{{>afQuickField name="medDose"}}
+			{{>afQuickField name="medDose" type="text"}}
 			{{>afQuickField name="medDate"}}
 			{{>afQuickField name="medDesc" rows=6}}
 		</fieldset>
-		<button type="submit" class="btn btn-primary">Add</button>									
+		<button type="submit" class="btn btn-primary">Add</button>
+		<button type="reset" class="btn btn-cancel">Clear</button>									
 	{{/autoForm}}
 </template>
