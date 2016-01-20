@@ -23,6 +23,12 @@
 	word-wrap: break-word;
 }
 
+.medDate{
+	display: inline-block;
+	width: 100px;
+	word-wrap: break-word;
+}
+
 .medDesc{
 	display: inline-block;
 	word-wrap: break-word;

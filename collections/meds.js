@@ -17,6 +17,12 @@ Meds.attachSchema(new SimpleSchema({
 		max: 999
 	},
 
+	medDate: {
+		type: Date,
+		label: "Date Prescribed",
+		optional: true,
+	},
+
 	medDesc: {
 		type: String,
 		label: "Description of Medicine",

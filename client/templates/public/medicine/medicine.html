@@ -23,14 +23,22 @@
 <template name="medlist">
 	<div class="eachMed">
 		<div class="row">
+
 			<b>Name:</b> 
 			<div class="medName">
 				{{medName}}
 			</div>
+
 			<b>Dosage:</b> 
 			<div class="medDose">
 				{{medDose}}mg
 			</div>
+
+			<b>Date:</b>
+			<div class="medDate">
+				{{medDate}}
+			</div>
+
 			<b>Description:</b>
 			<div class="medDesc">
 				{{medDesc}}
@@ -46,6 +54,7 @@
 			<legend><b>Add Medicine</b></legend>
 			{{>afQuickField name="medName"}}
 			{{>afQuickField name="medDose"}}
+			{{>afQuickField name="medDate"}}
 			{{>afQuickField name="medDesc" rows=6}}
 		</fieldset>
 		<button type="submit" class="btn btn-primary">Add</button>									
