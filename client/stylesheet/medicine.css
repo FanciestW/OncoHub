@@ -1,7 +1,8 @@
 .medList{
 	overflow: scroll;
 	background-color: #fff;
-	border-radius: 5px;;
+	border-radius: 5px;
+	height: 400px;
 }
 
 .eachMed{
