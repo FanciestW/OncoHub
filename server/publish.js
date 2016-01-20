@@ -1,10 +1,10 @@
 Meteor.publish('Meds', function(){
-  if(this.userId){
-    return Meds.find({createdBy: this.userId});
-  }
-  else{
-    this.ready();
-  }
+  	if(this.userId){
+    	return Meds.find({createdBy: this.userId});
+  	}
+  	else{
+    	this.ready();
+  	}
 });
 
 Meteor.publish('Treatments', function(){
