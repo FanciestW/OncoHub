@@ -14,7 +14,7 @@ if(Meteor.isClient){
 	});
 
 	//this event listener does not do anything any more after switching to simple schema and autoform
-	Template.medicine.events({
+	/*Template.medicine.events({
 		"submit": function(event){
 			event.preventDefault();
 			var text = event.target.medName.value;
@@ -25,7 +25,7 @@ if(Meteor.isClient){
 
 			event.target.text.value = "";
 		}
-	});
+	});*/
 	
 	Meteor.subscribe("Meds");
 }
