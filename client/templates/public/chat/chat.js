@@ -7,6 +7,4 @@ if(Meteor.isClient){
 	});	
 
 	Meteor.subscribe("Chat");
-	
-	$("#div1").animate({ scrollTop: $('#div1').prop("scrollHeight")}, 1000);
 }
