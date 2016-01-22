@@ -2,7 +2,7 @@ if(Meteor.isClient){
 	
 	Template.treatment.helpers({
 		treats: function(){
-			return Treatments.find().fetch().reverse()
+			return Treatments.find().fetch().reverse();
 		}
 	});
 
