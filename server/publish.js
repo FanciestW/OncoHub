@@ -15,3 +15,7 @@ Meteor.publish('Treatments', function(){
 		this.ready();
 	}
 });
+
+Meteor.publish('Chat', function(){
+	return Chat.find({});
+});
