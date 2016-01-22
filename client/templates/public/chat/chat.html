@@ -1,0 +1,13 @@
+<template name="chat">
+	<div class="row">
+		<p class="chatTitle">Chat</p>
+
+		<div class = "col-md-12 chatArea">
+			{{#each msg}}
+				{{ >msgList}}
+			{{/each}}
+		</div>	
+	</div>
+
+	
+</template>
