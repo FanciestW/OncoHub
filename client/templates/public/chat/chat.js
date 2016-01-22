@@ -2,23 +2,11 @@ if(Meteor.isClient){
 
 	Template.chat.helpers({
 		msg: function(){
-			return Chat.find().fetch().reverse();
+			return Chat.find();
 		}
 	});	
 
-
-
 	Meteor.subscribe("Chat");
+	
+	$("#div1").animate({ scrollTop: $('#div1').prop("scrollHeight")}, 1000);
 }
-$(document).ready(function(){
-
-	var height = 0;
-	$('#eachMsg').each(function(i, value){
-		height += parseInt($(this).height());
-	});
-
-	height += '';
-
-	$('#chatArea').animate({scrollTop: height});
-
-});

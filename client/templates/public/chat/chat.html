@@ -2,7 +2,7 @@
 	<div class="row">
 		<p class="chatTitle">Welcome to All Chat</p>
 		<div class="col-md-1"></div>
-		<div class = "col-md-10 chatArea" id="classArea">
+		<div class = "col-md-10 chatArea" id="chatArea">
 			{{#each msg}}
 				{{ >msgList}}
 			{{/each}}
@@ -10,6 +10,7 @@
 		<div class="col-md-1"></div>
 		<div class="col-md-10 chatBar">
 			{{>chatBar}}
+			<p id="tester">Click Me</p>
 		</div>
 		<div class="col-md-1"></div>
 	</div>
