@@ -26,3 +26,6 @@ aldeed:collection2
 aldeed:simple-schema
 aldeed:autoform
 insecure
+momentjs:moment
+aldeed:autoform-bs-datepicker
+rajit:bootstrap3-datepicker
