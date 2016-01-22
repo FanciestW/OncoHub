@@ -36,3 +36,7 @@
 	display: inline-block;
 	word-wrap: break-word;
 }
+
+.lbl{
+	font-size: 1.2em;
+}
