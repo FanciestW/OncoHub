@@ -1,13 +1,32 @@
 <template name="chat">
 	<div class="row">
-		<p class="chatTitle">Chat</p>
+		<p class="chatTitle">Welcome to All Chat</p>
 
-		<div class = "col-md-12 chatArea">
+		<div class = "col-md-12 chatArea" id="classArea">
 			{{#each msg}}
 				{{ >msgList}}
 			{{/each}}
 		</div>	
+		<div class="col-md-12 chatBar">
+			{{>chatBar}}
+		</div>
 	</div>
+</template>
 
-	
+<template name="msgList">
+	<div class="eachMsg" id="eachMsg">
+		<div class="row">
+			{{user}}: {{msg}}
+		</div>
+		<hr>
+	</div>
+</template>
+
+<template name="chatBar">
+	{{#autoForm collection="Chat" id="insertChatMsg" type="insert"}}
+		<fieldset>
+			{{>afQuickField name="msg" rows=2}}
+		</fieldset>
+		<button type="submit" class="btn btn-primary">Send</button>									
+	{{/autoForm}}
 </template>

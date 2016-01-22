@@ -1,0 +1,14 @@
+.chatTitle{
+	text-align: center;
+	font-weight: bolder;
+	font-size: 25px;
+}
+
+.chatArea{
+	padding: 20px;
+	margin: 20px;
+	overflow: auto;
+	background-color: #fff;
+	border-radius: 5px;
+	height: 400px;
+}
